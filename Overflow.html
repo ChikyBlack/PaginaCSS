@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contenedor {
+            background-color: #4d4d4d; /* Negro cenizo */
+            padding: 20px;
+            display: flex; /* Alineación de los divs en una fila */
+            flex-wrap: wrap; /* Permitir el ajuste de los divs en varias filas si es necesario */
+        }
+
+        .div {
+            width: 17%;
+            height: 150px;
+            padding: 1%;
+            margin-right: 10px; /* Espacio entre los divs */
+            margin-bottom: 10px;
+            background-color: beige;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .overflow-visible {
+            overflow: visible;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        .overflow-xy {
+            overflow-x: auto; /* Desbordamiento horizontal */
+            overflow-y: hidden; /* Ocultar el desbordamiento vertical */
+            white-space: nowrap; /*Evitar el ajuste automático de línea*/
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+      <a href="index.html">Transiciones</a>
+      <a href="Gradientes.html">Gradientes</a>
+      <a href="transformaciones.html">Transformaciones</a>
+      <a href="Prefijos.html">Prefijos</a>
+      <a href="Overflow.html">Overflow</a>
+</div>
+<div class="contenedor">
+  <div class="div overflow-visible">Div 1: Overflow visible <br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quis a sunt, maxime impedit dicta facere quidem, deserunt dolor consequuntur, explicabo illo similique necessitatibus? Fugit ducimus aliquid earum commodi voluptate.
+  </div>
+  <div class="div overflow-hidden">Div 2: Overflow hidden <br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quis a sunt, maxime impedit dicta facere quidem, deserunt dolor consequuntur, explicabo illo similique necessitatibus? Fugit ducimus aliquid earum commodi voluptate.
+  </div>
+  <div class="div overflow-scroll">Div 3: Overflow scroll <br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quis a sunt, maxime impedit dicta facere quidem, deserunt dolor consequuntur, explicabo illo similique necessitatibus? Fugit ducimus aliquid earum commodi voluptate.
+  </div>
+  <div class="div overflow-auto">Div 4: Overflow  <br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quis a sunt, maxime impedit dicta facere quidem, deserunt dolor consequuntur, explicabo illo similique necessitatibus? Fugit ducimus aliquid earum commodi voluptate.
+  </div>
+  <div class="div overflow-xy">Div 5: Overflow x y <br>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quis a sunt, maxime impedit dicta facere quidem, deserunt dolor consequuntur, explicabo illo similique necessitatibus? Fugit ducimus aliquid earum commodi voluptate. <br>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem impedit quidem, et placeat omnis possimus similique repellendus quasi reiciendis beatae eum nisi rerum incidunt vitae aut? Veniam asperiores reiciendis laborum.</p>
+  </div>
+</div>      
+
+</body>
+</html>

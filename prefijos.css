@@ -1,0 +1,79 @@
+.box {
+    width: 300px;
+    padding: 20px;
+    /* Prefijos para bordes redondeados */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    /* Degradado CSS con prefijos */
+    /* Utilizamos prefijos específicos de proveedores (-webkit-, -moz-, -ms-, -o-) antes de la propiedad linear-gradient para garantizar que el degradado funcione correctamente en diferentes navegadores.*/
+    background: -webkit-linear-gradient(top left, #ffcc00, #ff3300); /* Para Chrome y Safari */
+    background: -moz-linear-gradient(top left, #ffcc00, #ff3300); /* Para Firefox */
+    background: -ms-linear-gradient(top left, #ffcc00, #ff3300); /* Para Internet Explorer */
+    background: -o-linear-gradient(top left, #ffcc00, #ff3300); /* Para Opera */
+    background: linear-gradient(to bottom right, #ffcc00, #ff3300); /* Estándar */
+
+    /*Esto garantiza que el degradado de color se represente correctamente en una variedad de navegadores, incluidos Chrome, Safari, Firefox, Internet Explorer y Opera, al agregar los prefijos CSS3 necesarios para cada navegador.*/
+}
+
+
+
+.box h2 {
+    color: #333333;
+}
+
+.box p {
+    color: #131111;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-size:20px;
+    /* Prefijos para la propiedad de transición */
+    /* El uso de prefijos CSS3 asegura que esta transición sea compatible con una variedad de navegadores, incluidos Chrome, Firefox, Internet Explorer y Opera. */
+    -webkit-transition: color 0.3s ease; /* Chrome y Safari */
+    -moz-transition: color 0.3s ease; /* Firefox */
+    -ms-transition: color 0.3s ease; /* Internet Explorer */
+    -o-transition: color 0.3s ease; /* Opera */
+    transition: color 0.3s ease; /* Estándar */
+
+    /* La propiedad de transición (transition) permite especificar cómo se animará un cambio en una propiedad CSS específica. se usó la propiedad de transición (transition) para suavizar el cambio de color del enlace cuando el usuario pasa el cursor sobre él.
+    
+    La propiedad transition en CSS te permite controlar cómo se animan los cambios en las propiedades CSS de un elemento a lo largo del tiempo. Te permite especificar la duración, el tiempo de espera, la función de temporización y otros aspectos de la animación.
+    */
+}
+
+/*cuando el cursor del mouse se sitúa sobre el enlace, el color del texto se cambia a morado*/
+.link:hover {
+    color: #62088b;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #5bc0de;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
